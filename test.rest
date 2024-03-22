@@ -2,7 +2,7 @@ POST http://127.0.0.1:8000/login
 content-type: application/json
 
 { 
-  "username": "alamorre", 
+  "username": "bob", 
   "password": "Pass1234!" 
 }
 
@@ -10,22 +10,28 @@ content-type: application/json
 POST http://127.0.0.1:8000/signup
 content-type: application/json
 
-{ "username":"bob", "password": "Pass1234!", "email": "bob@mail.mail"}
+{ 
+  "username":"bob", 
+  "password": "Pass1234!", 
+  "email": "bob@mail.mail"
+}
 
 ###
 GET http://127.0.0.1:8000/test_token
 content-type: application/json
+Authorization: Token c296c0bbc2c41d2d586dab75a9252fc5fa2532d9
 
 {}
 
-###
-GET https://example.com/comments/1 HTTP/1.1
+# ###
 
-###
-POST https://example.com/comments HTTP/1.1
-content-type: application/json
+# GET https://example.com/comments/1 HTTP/1.1
 
-{
-    "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
-}
+# ###
+# POST https://example.com/comments HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name": "sample",
+#     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+# }
